@@ -19,9 +19,9 @@ app.service('itunesService', function($http, $q){
       }).then(function(response) {
         var parsedResponse = response.data.results
         console.log(response);
-        for (var i = 0; i < parsedResponse.length; i++) {
-          // parse something
-        }
+        // for (var i = 0; i < parsedResponse.length; i++) {
+        //   // parse something
+        // }
         deferred.resolve(parsedResponse)
       })
       return deferred.promise;
